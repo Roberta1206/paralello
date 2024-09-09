@@ -1,69 +1,74 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0; /*um número especificado= mesmo valor para todos os lados= superior,inferior,direito,esquerdo*/
+    padding: 0; /*distância entre o conteúdo de um elemento e suas bordas*/
 }
 header{
-    background-image: url(../img/slidebg1.jpg); /*copia o caminho da imagem*/
+    background-image: url(../img/slidebg1.jpg); /*copia o caminho da imagem de fundo*/
     background-repeat: no-repeat; /* para nao repetir a imagem*/
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 720px;
-    padding-top: 15px;
+    background-size: cover; /*tamanho da imagem de fundo;cover= dimensiona a imagem,mantendo a proporção
+    para caber e cobrir o espaço vazio*/ 
+    background-position: center; /*posiçao da imagem, nesse caso no centro*/
+    width: 100%; /*largura*/
+    height: 720px; /*altura*/
+    padding-top: 15px; /*define a altura da área de preenchimento na parte superior de um elemento*/
 }  
 nav{
     background-color: black;
-    min-width: 1200px;
-    max-width: 1400px;
-    height: 125px;
-    margin: 0 auto 0 auto; /*cima-direita-baixo-esquerda*/
+    min-width: 1200px; /*largura mínima*/
+    max-width: 1400px; /*largura máxima*/
+    height: 125px; /*altura*/
+    margin: 0 auto 0 auto; /*margem: cima-direita-baixo-esquerda*/
 }
 nav #logo{
-    margin: 23px;
-    float: left;
+    margin: 23px; /*margem da imagem*/
+    float: left; /*determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo 
+    do lado direito ou esquerdo, onde textos e elementos em linha irão se posicionar ao seu redor*/
 }
 nav #logo img{
-    height: 75px;
+    height: 75px; /*altura*/
 }
 nav ul li a{
-    text-decoration: line-through; /*linha no meio da palavra*/
-    padding: 55px 20px 55px 0;
-    float: left;
+    text-decoration: line-through; /*decoraçao do texto- linha no meio da palavra*/
+    padding: 55px 20px 55px 0; /*cima-direita-baixo-esquerda*/
+    float: left; /*determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo 
+    do lado direito ou esquerdo, onde textos e elementos em linha irão se posicionar ao seu redor*/
 }
 nav ul li{
-    color: aliceblue;
-    font-size: 16px;
+    color: aliceblue; /*cor da fonte*/
+    font-size: 16px; /*tamanho da fonte*/
     font-family: Montserrat, sans-serif; /*fonte da letra*/
-    list-style: none;
-    text-align: center;
-    transition: 1s;
+    list-style: none; /*texto em listagem*/
+    text-align: center; /*alinha o texto no centro*/
+    transition: 1s; /*para aparecer a cor com transição*/
 }
 nav ul{
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
+    display: flex; /*deixa a forma de exibição flexível*/
+    flex-direction: row; /*para a exibição ser em linha*/
+    margin: 0; /*margem;um número especificado= mesmo valor para todos os lados= superior,inferior,direito,esquerdo*/
+    padding: 0; /*pading controla o espaçamento entre um elemento e o seu conteúdo interno*/
 }
 nav #menu_principal{
-    float: right;
+    float: right; /*determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo 
+    do lado direito ou esquerdo, onde textos e elementos em linha irão se posicionar ao seu redor*/
 }
 #menu_principal li span{
-    font-family: Montserrat, sans-serif;
-    font-size: 11px;
-    color: rgb(134,134,134);
-    margin-right: 3px;
-    margin-top: 60px;
-    float: left;
+    font-family: Montserrat, sans-serif; /*fonte*/
+    font-size: 11px; /*tamanho da fonte*/
+    color: rgb(134,134,134); /*cor*/
+    margin-right: 3px; /*para alinhar para direita*/
+    margin-top: 60px; /*margem superior*/
+    float: left; /*determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo 
+    do lado direito ou esquerdo, onde textos e elementos em linha irão se posicionar ao seu redor*/
 }
 #menu_principal li a{
-    color: white;
-    font-size: 14px;
+    color: white; /*cor*/
+    font-size: 14px; /*tamanho da fonte*/
     text-transform: uppercase; /* deixa todo o texto maiúsculo, mesmo que esteja minúsculo*/
-    text-decoration: none;
-    transition: 1s;
+    text-decoration: none; /*decoraçao do texto*/
+    transition: 1s; /*para aparecer a cor com transição*/
 }
 #menu_principal li a:hover{
-    color: rgb(231, 169, 32);
+    color: rgb(231, 169, 32); /*cor*/
     transition: 1s; /*para aparecer a cor com transição*/
     text-decoration: line-through; /* linha no meio da palavra*/
 }
@@ -77,62 +82,76 @@ section{
     height: 500px; /*altura*/
 }
 /* ------------------trabalhos----------------*/
+.trabalhos .mosaico{
+    min-width: 1200px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.trabalhos .mosaico .item{
+    height: 470px; /*altura*/
+    width: 570px; /*largura*/
+    background-image: url(../img/slidebg1.jpg);
+    background-size: cover; /*tamanho da imagem de fundo*/
+    background-position: center; /*posiçao da imagem, nesse caso no centro*/
+}
 #trabalhos{
     background-color: blue;
 }
+/*------------------fim do trabalhos----------*/
 .icons{
-    height: 120px;
-    width: 345px;
+    height: 120px; /*altura*/
+    width: 345px; /*largura*/
     margin: 0 auto; /*controla o espaço entre um determinado elemento e tudo o que estiver em volta dele. A margin é aplicada ao redor da borda*/
     display: flex; /*deixa a forma de exibição flexível*/
     flex-direction: row; /*para a exibição ser em linha*/
 }
 .icons .icon img{
-    width: 115px;
+    width: 115px; /*largura*/
 }
 .citacao{
-    width: 850px;
-    margin: 0 auto;
+    width: 850px; /*largura*/
+    margin: 0 auto; /*auto= navegador seleciona uma margem adequada para utilizar. Por exemplo, em alguns casos este valor pode ser utilizado para centralizar o elemento*/
 }
 .citacao h6{
     font-size: 28px; /*tamanho da fonte*/
     font-weight: 300; /*altura da fonte*/
-    width: 80%;
+    width: 80%; /*largura*/
     display: inline-block; /*reconhece os conteúdos do float left*/
-    line-height: 40px;
+    line-height: 40px; /*define a altura de uma caixa de linha nos modos de escrita horizontal*/
     font-family: 'Roboto Slab', serif; /*lembrete: mudar a fonte pelo google fontes*/
-    text-align: center;
-    margin: 0;
-    margin-left: 100px; /*para alinhar*/
+    text-align: center; /*alinha o texto no centro*/
+    margin: 0; /*mesmo valor de margem pra todos os lados*/
+    margin-left: 100px; /*para alinhar para esquerda*/
     margin-top: 40px; /*distância da imagem pro texto*/
 }
 .texto h4{
-    width: 1170px;
-    margin: 0 auto;
-    font-family: Montserrat, sans-serif;
+    width: 1170px; /*largura*/
+    margin: 0 auto; /*controla o espaço entre um determinado elemento e tudo o que estiver em volta dele. A margin é aplicada ao redor da borda*/
+    font-family: Montserrat, sans-serif; /*fonte do texto*/
     font-size: 24px; /*tamanho da fonte*/
-    color: rgb(231, 169, 32);
+    color: rgb(231, 169, 32); /*cor da fonte*/
     text-align: center; /*alinhar no centro*/
     font-weight: 100; /*grossura da fonte*/
+    font-style: italic; /*estilo da fonte*/
 }
 .texto h1{
-    font-family: Montserrat, sans-serif;
-    font-size: 85px;
+    font-family: Montserrat, sans-serif; /*fonte do texto*/
+    font-size: 85px; /*tamanho da fonte*/
     font-style: italic; /*estilo da fonte*/
     font-weight: 700; /*grossura da fonte*/
-    height: 121px;
-    text-align: center;
-    margin-top: -14px; 
+    height: 121px; /*altura*/
+    text-align: center; /*alinha o texto no centro*/
+    margin-top: -14px; /*distância da imagem pro texto superior*/
 }
 .wave{
-    text-align: center;
-    margin-top: -100px; 
+    text-align: center; /*alinha o texto no centro*/
+    margin-top: -100px; /*margem superior*/
 }
 p{
-    text-align: center;
-    font-family: Montserrat, sans-serif;
-    font-size: 20px;
-    margin-left: 30px;
-    margin-top: 12px;
-    font-style: italic;
+    text-align: center; /*alinha o texto no centro*/
+    font-family: Montserrat, sans-serif; /*fonte do texto*/
+    font-size: 20px; /*tamanho da fonte*/
+    margin-left: 30px; /*para alinhar para esquerda*/
+    margin-top: 12px; /*distância da imagem pro texto superior*/
+    font-style: italic; /*estilo da fonte*/
 }
