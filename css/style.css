@@ -16,7 +16,7 @@ nav{
     min-width: 1200px;
     max-width: 1400px;
     height: 125px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 0 auto; /*cima-direita-baixo-esquerda*/
 }
 nav #logo{
     margin: 23px;
@@ -67,13 +67,72 @@ nav #menu_principal{
     transition: 1s; /*para aparecer a cor com transição*/
     text-decoration: line-through; /* linha no meio da palavra*/
 }
-section{
+.rule{
     background-image: url(../img/divider-dark.png); /*copia o caminho da imagem*/
-    width: 100%;
-    height: 500px;
     background-repeat: repeat-x; /*repete só no eixo x*/
+    padding-top: 100px; /*pading controla o espaçamento entre um elemento e o seu conteúdo interno*/
+}
+section{
+    width: 100%; /*largura*/
+    height: 500px; /*altura*/
 }
 /* ------------------trabalhos----------------*/
 #trabalhos{
     background-color: blue;
+}
+.icons{
+    height: 120px;
+    width: 345px;
+    margin: 0 auto; /*controla o espaço entre um determinado elemento e tudo o que estiver em volta dele. A margin é aplicada ao redor da borda*/
+    display: flex; /*deixa a forma de exibição flexível*/
+    flex-direction: row; /*para a exibição ser em linha*/
+}
+.icons .icon img{
+    width: 115px;
+}
+.citacao{
+    width: 850px;
+    margin: 0 auto;
+}
+.citacao h6{
+    font-size: 28px; /*tamanho da fonte*/
+    font-weight: 300; /*altura da fonte*/
+    width: 80%;
+    display: inline-block; /*reconhece os conteúdos do float left*/
+    line-height: 40px;
+    font-family: 'Roboto Slab', serif; /*lembrete: mudar a fonte pelo google fontes*/
+    text-align: center;
+    margin: 0;
+    margin-left: 100px; /*para alinhar*/
+    margin-top: 40px; /*distância da imagem pro texto*/
+}
+.texto h4{
+    width: 1170px;
+    margin: 0 auto;
+    font-family: Montserrat, sans-serif;
+    font-size: 24px; /*tamanho da fonte*/
+    color: rgb(231, 169, 32);
+    text-align: center; /*alinhar no centro*/
+    font-weight: 100; /*grossura da fonte*/
+}
+.texto h1{
+    font-family: Montserrat, sans-serif;
+    font-size: 85px;
+    font-style: italic; /*estilo da fonte*/
+    font-weight: 700; /*grossura da fonte*/
+    height: 121px;
+    text-align: center;
+    margin-top: -14px; 
+}
+.wave{
+    text-align: center;
+    margin-top: -100px; 
+}
+p{
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 12px;
+    font-style: italic;
 }
